@@ -78,3 +78,20 @@ let Ejer2 = (valor_com,num_escogido)=>{
               }   
         } 
         console.log(Ejer5(70000,150,150));
+
+    // 6 ejercicio
+
+    Ejer6 = (comp) => {
+        let no_descuento = (comp * 11000);
+        if(comp < 5){
+            descuento = no_descuento - (no_descuento * 0.1);
+            return `Total a pagar por ${comp} es de: $${descuento}`;
+        }else if(comp >= 5 && n_comp < 10){
+            descuento = no_descuento - (tno_descuento * 0.2);
+            return `Total a pagar por ${comp} es de: $${descuento}`;
+        }else{
+            descuento = no_descuento - (no_descuento * 0.4);
+            return `Total a pagar por ${comp} es de: $${descuento}`;
+        }
+    }
+    console.log(Ejer6(7));
