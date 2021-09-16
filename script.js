@@ -133,3 +133,18 @@ let Ejer2 = (valor_com,num_escogido)=>{
                         Intereses: ${int} `    
                     } 
                     console.log(Ejer8(30,500000));
+        
+    // ejercicio 9
+Ejer9 = (n1,n2) => {
+    if(n1 == n2){
+        let multiplicacion = (n1 * n2);
+        return `${n1} * ${n2} es: ${multiplicacion} `;
+    }else if (n1 > n2){
+        let resta = (n1 - n2);
+        return `${n1} - ${n2} es: ${resta} `;
+    }else{
+        let suma = (n1 + n2);
+        return ` ${n1} + ${n2} es: ${suma} `;
+    }
+}
+console.log(Ejer9(5,10));
