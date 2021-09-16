@@ -30,7 +30,7 @@ let Ejer2 = (valor_com,num_escogido)=>{
     console.log(Ejer2(8000,72));
 
     // 3 ejercicio
-    comp_seguros = (fianza) => {
+    Ejer3 = (fianza) => {
         if(fianza < 50000){
             let cuota = (fianza * 0.03)
             let total = (cuota + fianza);
@@ -43,5 +43,25 @@ let Ejer2 = (valor_com,num_escogido)=>{
             \n El valor a pagar al cliente es de: $${total}`;
         }
     }
-    console.log(comp_seguros(70000));
+    console.log(Ejer3(70000));
+
+    // 4ejercicio
     
+    Ejer4 = (p_l,p_m,p_mi,p_j,p_v,g_l,g_m,g_mi,g_j,g_v) => {
+
+        let prom = (p_l + p_m + p_mi + p_j + p_v) / 5
+        let g = (g_l + g_m + g_mi + g_j + g_v)
+
+        if(prom > 170){
+            let sancion = (g * 0.5);
+            let multa = (g - sancion);
+            return `Los puntos promedios son ${prom}\n
+                Promedio mayor a 170, Parar la produccion.\n
+                Gaancia total: $${g}\n 
+                Multa: $${multa}`;
+        }else{
+            return `No tendra ni sancion ni multa\n
+             Ganacia total: $${g}`
+        }
+    }
+    console.log(Ejer4(100,250,100,500,450,10000,15000,20000,25000,30000));
