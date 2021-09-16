@@ -148,3 +148,14 @@ Ejer9 = (n1,n2) => {
     }
 }
 console.log(Ejer9(5,10));
+ // ejercicio 10
+ Ejer10 = (n1,n2,n3) => {
+    if (n1 > n2 && n1 > n3){
+        return `El numero mayor es: ${n1}`;
+    }else if (n1 < n2 && n2 > n3){
+        return `El numero mayor es: ${n2}`;
+    }else if (n1 < n3 && n2 < n3){
+        return `El numero mayor es: ${n3}`;
+    }
+}
+console.log(Ejer10(22,16,8));
