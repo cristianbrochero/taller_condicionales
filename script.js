@@ -65,3 +65,16 @@ let Ejer2 = (valor_com,num_escogido)=>{
         }
     }
     console.log(Ejer4(100,250,100,500,450,10000,15000,20000,25000,30000));
+
+    // 5 ejercicio
+    let Ejer5 = (valor,devaluado,valoracion)=>{
+        devaluado1 = ((devaluado/100)*valor)*(36);
+        valoracion1 = ((valoracion/100)*valor)*(36);
+        m= valoracion1/2;
+        if(devaluado1 < m){
+                return "Comprar carro"          
+        }else{
+               return "No Comprar carro"      
+              }   
+        } 
+        console.log(Ejer5(70000,150,150));
