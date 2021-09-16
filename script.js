@@ -113,3 +113,23 @@ let Ejer2 = (valor_com,num_escogido)=>{
           VALOR TOTAL A CANCELAR + IVA: ${total+iva} `    
          }          
          console.log(Ejer7(4500,'NOSY'));
+
+         //ejercicio 8
+         let Ejer8 = (n,v)=>{
+              total1= n*v;
+                     if(total1 > 500000){
+                          inv = total2 * 0.55;
+                           cred = total1 * 0.15;
+                            banc = total1 * 0.30;       
+                        }else{
+                            inv = total1 * 0.70;
+                            cred = total1 * 0.30;
+                            banc = 0; 
+                        }
+                        int = cred * 0.20;
+                        return `Inversion: ${inv}\n
+                        Prestamo: ${banc} \n
+                        Credito: ${cred} \n
+                        Intereses: ${int} `    
+                    } 
+                    console.log(Ejer8(30,500000));
