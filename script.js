@@ -28,4 +28,20 @@ let Ejer2 = (valor_com,num_escogido)=>{
         \nDinero descontado: ${desc} `;
     } 
     console.log(Ejer2(8000,72));
+
+    // 3 ejercicio
+    comp_seguros = (fianza) => {
+        if(fianza < 50000){
+            let cuota = (fianza * 0.03)
+            let total = (cuota + fianza);
+            return `El valor a cancelar es de: $${cuota}
+            \n El valor a cancelar del cliente es: $${total_}`;
+        }else{
+            let cuota = (fianza * 0.02)
+            let total = (cuota + fianza);
+            return `La cuota a pagar es de: $${cuota}
+            \n El valor a pagar al cliente es de: $${total}`;
+        }
+    }
+    console.log(comp_seguros(70000));
     
