@@ -95,3 +95,21 @@ let Ejer2 = (valor_com,num_escogido)=>{
         }
     }
     console.log(Ejer6(7));
+
+    // 7 ejercicio
+    let Ejer7 = (p_aparato,m_aparato)=>{
+
+        desc = 0; 
+         if(m_aparato == 'NOSY' && p_aparato >= 2000 ){
+                 desc = p_aparato * 0.15;      
+         }else if(p_aparato >= 2000){
+                desc = p_aparato * 0.10;      
+         }
+         total = p_aparato - desc;
+         iva = (total * 0.16)/100;
+         return `Valor sin descuento: ${p_aparato}\n
+          Descuento: ${desc} \n 
+          IVA: ${iva} \n 
+          VALOR TOTAL A CANCELAR + IVA: ${total+iva} `    
+         }          
+         console.log(Ejer7(4500,'NOSY'));
